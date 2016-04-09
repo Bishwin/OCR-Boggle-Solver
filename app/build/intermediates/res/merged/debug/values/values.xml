@@ -162,7 +162,10 @@
     <string name="abc_toolbar_collapse_description">Collapse</string>
     <string name="action_settings">Settings</string>
     <string name="app_name">Boggle</string>
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <string name="new_select_picture_button">SELECT PICTURE</string>
+    <string name="new_take_picture_button">TAKE PICTURE</string>
+    <string name="new_text_game_button">ENTER GAME</string>
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
         <!-- Customize your theme here. -->
     </style>
     <style name="Base.TextAppearance.AppCompat" parent="android:TextAppearance">

@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Boggle</string>
     <string name="action_settings">Settings</string>
+    <string name="new_text_game_button">ENTER GAME</string>
+    <string name="new_take_picture_button">TAKE PICTURE</string>
+    <string name="new_select_picture_button">SELECT PICTURE</string>
 </resources>
