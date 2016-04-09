@@ -80,12 +80,12 @@
         "source": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\drawable-xxhdpi\\abc_ic_menu_paste_mtrl_am_alpha.png"
     },
     {
-        "merged": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png",
-        "source": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\drawable-xxhdpi\\abc_cab_background_top_mtrl_alpha.9.png"
-    },
-    {
         "merged": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_add_a_photo_black_24dp.png",
         "source": "D:\\dev\\Android\\Boggle\\app\\src\\main\\res\\drawable-xxhdpi\\ic_add_a_photo_black_24dp.png"
+    },
+    {
+        "merged": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png",
+        "source": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\drawable-xxhdpi\\abc_cab_background_top_mtrl_alpha.9.png"
     },
     {
         "merged": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_list_selector_disabled_holo_light.9.png",

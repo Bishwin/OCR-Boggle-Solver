@@ -32,16 +32,16 @@
         "source": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\drawable-hdpi\\abc_ic_go_search_api_mtrl_alpha.png"
     },
     {
+        "merged": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_create_black_24dp.png",
+        "source": "D:\\dev\\Android\\Boggle\\app\\src\\main\\res\\drawable-hdpi\\ic_create_black_24dp.png"
+    },
+    {
         "merged": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_switch_track_mtrl_alpha.9.png",
         "source": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\drawable-hdpi\\abc_switch_track_mtrl_alpha.9.png"
     },
     {
         "merged": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_btn_radio_to_on_mtrl_000.png",
         "source": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\drawable-hdpi\\abc_btn_radio_to_on_mtrl_000.png"
-    },
-    {
-        "merged": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_create_black_24dp.png",
-        "source": "D:\\dev\\Android\\Boggle\\app\\src\\main\\res\\drawable-hdpi\\ic_create_black_24dp.png"
     },
     {
         "merged": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_ic_search_api_mtrl_alpha.png",
@@ -124,12 +124,12 @@
         "source": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\drawable-hdpi\\abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
-        "merged": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_ab_share_pack_holo_light.9.png",
-        "source": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\drawable-hdpi\\abc_ab_share_pack_holo_light.9.png"
-    },
-    {
         "merged": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_camera_alt_black_24dp.png",
         "source": "D:\\dev\\Android\\Boggle\\app\\src\\main\\res\\drawable-hdpi\\ic_camera_alt_black_24dp.png"
+    },
+    {
+        "merged": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_ab_share_pack_holo_light.9.png",
+        "source": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\drawable-hdpi\\abc_ab_share_pack_holo_light.9.png"
     },
     {
         "merged": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_ic_voice_search_api_mtrl_alpha.png",

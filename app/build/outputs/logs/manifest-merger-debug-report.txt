@@ -65,6 +65,7 @@ uses-sdk
 INJECTED from D:\dev\Android\Boggle\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:21.0.3] D:\dev\Android\Boggle\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.3\AndroidManifest.xml:15:5-42
 MERGED from [com.android.support:support-v4:21.0.3] D:\dev\Android\Boggle\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\AndroidManifest.xml:15:5-42
+MERGED from [Boggle:openCVLibrary310:unspecified] D:\dev\Android\Boggle\app\build\intermediates\exploded-aar\Boggle\openCVLibrary310\unspecified\AndroidManifest.xml:7:5-9:41
 	android:targetSdkVersion
 		INJECTED from D:\dev\Android\Boggle\app\src\main\AndroidManifest.xml
 		INJECTED from D:\dev\Android\Boggle\app\src\main\AndroidManifest.xml

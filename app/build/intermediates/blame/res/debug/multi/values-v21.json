@@ -12,7 +12,15 @@
                     "endOffset": 544
                 },
                 "from": {
-                    "file": "D:\\dev\\Android\\Boggle\\app\\src\\main\\res\\values-v21\\styles.xml"
+                    "file": "D:\\dev\\Android\\Boggle\\app\\src\\main\\res\\values-v21\\styles.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 57,
+                        "endLine": 9,
+                        "endColumn": 12,
+                        "endOffset": 553
+                    }
                 }
             },
             {
@@ -24,7 +32,14 @@
                     "endOffset": 635
                 },
                 "from": {
-                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml"
+                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 56,
+                        "endColumn": 91,
+                        "endOffset": 143
+                    }
                 }
             },
             {
@@ -36,7 +51,14 @@
                     "endOffset": 738
                 },
                 "from": {
-                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml"
+                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 149,
+                        "endColumn": 103,
+                        "endOffset": 248
+                    }
                 }
             },
             {
@@ -48,7 +70,14 @@
                     "endOffset": 841
                 },
                 "from": {
-                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml"
+                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 254,
+                        "endColumn": 103,
+                        "endOffset": 353
+                    }
                 }
             },
             {
@@ -60,7 +89,14 @@
                     "endOffset": 946
                 },
                 "from": {
-                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml"
+                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 359,
+                        "endColumn": 105,
+                        "endOffset": 460
+                    }
                 }
             },
             {
@@ -72,7 +108,14 @@
                     "endOffset": 1053
                 },
                 "from": {
-                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml"
+                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 466,
+                        "endColumn": 107,
+                        "endOffset": 569
+                    }
                 }
             },
             {
@@ -84,7 +127,14 @@
                     "endOffset": 1162
                 },
                 "from": {
-                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml"
+                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 575,
+                        "endColumn": 109,
+                        "endOffset": 680
+                    }
                 }
             },
             {
@@ -96,7 +146,14 @@
                     "endOffset": 1271
                 },
                 "from": {
-                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml"
+                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 686,
+                        "endColumn": 109,
+                        "endOffset": 791
+                    }
                 }
             },
             {
@@ -108,7 +165,14 @@
                     "endOffset": 1380
                 },
                 "from": {
-                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml"
+                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 797,
+                        "endColumn": 109,
+                        "endOffset": 902
+                    }
                 }
             },
             {
@@ -120,7 +184,14 @@
                     "endOffset": 1489
                 },
                 "from": {
-                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml"
+                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 908,
+                        "endColumn": 109,
+                        "endOffset": 1013
+                    }
                 }
             },
             {
@@ -132,7 +203,14 @@
                     "endOffset": 1598
                 },
                 "from": {
-                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml"
+                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 1019,
+                        "endColumn": 109,
+                        "endOffset": 1124
+                    }
                 }
             },
             {
@@ -144,7 +222,14 @@
                     "endOffset": 1705
                 },
                 "from": {
-                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml"
+                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml",
+                    "position": {
+                        "startLine": 23,
+                        "startColumn": 4,
+                        "startOffset": 1130,
+                        "endColumn": 107,
+                        "endOffset": 1233
+                    }
                 }
             },
             {
@@ -156,7 +241,14 @@
                     "endOffset": 1808
                 },
                 "from": {
-                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml"
+                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml",
+                    "position": {
+                        "startLine": 25,
+                        "startColumn": 4,
+                        "startOffset": 1239,
+                        "endColumn": 103,
+                        "endOffset": 1338
+                    }
                 }
             },
             {
@@ -168,7 +260,14 @@
                     "endOffset": 1927
                 },
                 "from": {
-                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml"
+                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml",
+                    "position": {
+                        "startLine": 27,
+                        "startColumn": 4,
+                        "startOffset": 1344,
+                        "endColumn": 119,
+                        "endOffset": 1459
+                    }
                 }
             },
             {
@@ -180,7 +279,14 @@
                     "endOffset": 2070
                 },
                 "from": {
-                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml"
+                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml",
+                    "position": {
+                        "startLine": 29,
+                        "startColumn": 4,
+                        "startOffset": 1465,
+                        "endColumn": 149,
+                        "endOffset": 1610
+                    }
                 }
             },
             {
@@ -192,7 +298,14 @@
                     "endOffset": 2213
                 },
                 "from": {
-                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml"
+                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml",
+                    "position": {
+                        "startLine": 31,
+                        "startColumn": 4,
+                        "startOffset": 1616,
+                        "endColumn": 149,
+                        "endOffset": 1761
+                    }
                 }
             },
             {
@@ -204,7 +317,14 @@
                     "endOffset": 2318
                 },
                 "from": {
-                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml"
+                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml",
+                    "position": {
+                        "startLine": 33,
+                        "startColumn": 4,
+                        "startOffset": 1767,
+                        "endColumn": 105,
+                        "endOffset": 1868
+                    }
                 }
             },
             {
@@ -216,7 +336,14 @@
                     "endOffset": 2439
                 },
                 "from": {
-                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml"
+                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml",
+                    "position": {
+                        "startLine": 35,
+                        "startColumn": 4,
+                        "startOffset": 1874,
+                        "endColumn": 121,
+                        "endOffset": 1991
+                    }
                 }
             },
             {
@@ -228,7 +355,14 @@
                     "endOffset": 2540
                 },
                 "from": {
-                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml"
+                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml",
+                    "position": {
+                        "startLine": 37,
+                        "startColumn": 4,
+                        "startOffset": 1997,
+                        "endColumn": 101,
+                        "endOffset": 2094
+                    }
                 }
             },
             {
@@ -240,7 +374,14 @@
                     "endOffset": 2676
                 },
                 "from": {
-                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml"
+                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml",
+                    "position": {
+                        "startLine": 39,
+                        "startColumn": 4,
+                        "startOffset": 2100,
+                        "endColumn": 142,
+                        "endOffset": 2238
+                    }
                 }
             },
             {
@@ -252,7 +393,14 @@
                     "endOffset": 2806
                 },
                 "from": {
-                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml"
+                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml",
+                    "position": {
+                        "startLine": 41,
+                        "startColumn": 4,
+                        "startOffset": 2244,
+                        "endColumn": 136,
+                        "endOffset": 2376
+                    }
                 }
             },
             {
@@ -264,7 +412,14 @@
                     "endOffset": 2909
                 },
                 "from": {
-                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml"
+                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml",
+                    "position": {
+                        "startLine": 43,
+                        "startColumn": 4,
+                        "startOffset": 2382,
+                        "endColumn": 103,
+                        "endOffset": 2481
+                    }
                 }
             },
             {
@@ -276,7 +431,14 @@
                     "endOffset": 3028
                 },
                 "from": {
-                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml"
+                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml",
+                    "position": {
+                        "startLine": 45,
+                        "startColumn": 4,
+                        "startOffset": 2487,
+                        "endColumn": 119,
+                        "endOffset": 2602
+                    }
                 }
             },
             {
@@ -288,7 +450,14 @@
                     "endOffset": 3135
                 },
                 "from": {
-                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml"
+                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml",
+                    "position": {
+                        "startLine": 47,
+                        "startColumn": 4,
+                        "startOffset": 2608,
+                        "endColumn": 107,
+                        "endOffset": 2711
+                    }
                 }
             },
             {
@@ -300,7 +469,14 @@
                     "endOffset": 3238
                 },
                 "from": {
-                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml"
+                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml",
+                    "position": {
+                        "startLine": 49,
+                        "startColumn": 4,
+                        "startOffset": 2717,
+                        "endColumn": 103,
+                        "endOffset": 2816
+                    }
                 }
             },
             {
@@ -312,7 +488,14 @@
                     "endOffset": 3373
                 },
                 "from": {
-                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml"
+                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml",
+                    "position": {
+                        "startLine": 51,
+                        "startColumn": 4,
+                        "startOffset": 2822,
+                        "endColumn": 141,
+                        "endOffset": 2959
+                    }
                 }
             },
             {
@@ -324,7 +507,14 @@
                     "endOffset": 3516
                 },
                 "from": {
-                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml"
+                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml",
+                    "position": {
+                        "startLine": 53,
+                        "startColumn": 4,
+                        "startOffset": 2965,
+                        "endColumn": 149,
+                        "endOffset": 3110
+                    }
                 }
             },
             {
@@ -336,7 +526,14 @@
                     "endOffset": 3675
                 },
                 "from": {
-                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml"
+                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml",
+                    "position": {
+                        "startLine": 55,
+                        "startColumn": 4,
+                        "startOffset": 3116,
+                        "endColumn": 165,
+                        "endOffset": 3277
+                    }
                 }
             },
             {
@@ -348,7 +545,14 @@
                     "endOffset": 3812
                 },
                 "from": {
-                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml"
+                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml",
+                    "position": {
+                        "startLine": 57,
+                        "startColumn": 4,
+                        "startOffset": 3283,
+                        "endColumn": 143,
+                        "endOffset": 3422
+                    }
                 }
             },
             {
@@ -360,7 +564,14 @@
                     "endOffset": 3965
                 },
                 "from": {
-                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml"
+                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml",
+                    "position": {
+                        "startLine": 59,
+                        "startColumn": 4,
+                        "startOffset": 3428,
+                        "endColumn": 159,
+                        "endOffset": 3583
+                    }
                 }
             },
             {
@@ -372,7 +583,14 @@
                     "endOffset": 4110
                 },
                 "from": {
-                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml"
+                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml",
+                    "position": {
+                        "startLine": 61,
+                        "startColumn": 4,
+                        "startOffset": 3589,
+                        "endColumn": 151,
+                        "endOffset": 3736
+                    }
                 }
             },
             {
@@ -384,7 +602,14 @@
                     "endOffset": 4249
                 },
                 "from": {
-                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml"
+                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml",
+                    "position": {
+                        "startLine": 63,
+                        "startColumn": 4,
+                        "startOffset": 3742,
+                        "endColumn": 145,
+                        "endOffset": 3883
+                    }
                 }
             },
             {
@@ -396,7 +621,14 @@
                     "endOffset": 4386
                 },
                 "from": {
-                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml"
+                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml",
+                    "position": {
+                        "startLine": 65,
+                        "startColumn": 4,
+                        "startOffset": 3889,
+                        "endColumn": 143,
+                        "endOffset": 4028
+                    }
                 }
             },
             {
@@ -408,7 +640,14 @@
                     "endOffset": 4523
                 },
                 "from": {
-                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml"
+                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml",
+                    "position": {
+                        "startLine": 67,
+                        "startColumn": 4,
+                        "startOffset": 4034,
+                        "endColumn": 143,
+                        "endOffset": 4173
+                    }
                 }
             },
             {
@@ -420,7 +659,14 @@
                     "endOffset": 4635
                 },
                 "from": {
-                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml"
+                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml",
+                    "position": {
+                        "startLine": 69,
+                        "startColumn": 4,
+                        "startOffset": 4179,
+                        "endColumn": 112,
+                        "endOffset": 4287
+                    }
                 }
             },
             {
@@ -432,7 +678,14 @@
                     "endOffset": 4776
                 },
                 "from": {
-                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml"
+                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml",
+                    "position": {
+                        "startLine": 71,
+                        "startColumn": 4,
+                        "startOffset": 4293,
+                        "endColumn": 147,
+                        "endOffset": 4436
+                    }
                 }
             },
             {
@@ -444,7 +697,14 @@
                     "endOffset": 4911
                 },
                 "from": {
-                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml"
+                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml",
+                    "position": {
+                        "startLine": 73,
+                        "startColumn": 4,
+                        "startOffset": 4442,
+                        "endColumn": 141,
+                        "endOffset": 4579
+                    }
                 }
             },
             {
@@ -456,7 +716,14 @@
                     "endOffset": 4986
                 },
                 "from": {
-                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml"
+                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml",
+                    "position": {
+                        "startLine": 75,
+                        "startColumn": 4,
+                        "startOffset": 4585,
+                        "endColumn": 75,
+                        "endOffset": 4656
+                    }
                 }
             },
             {
@@ -468,7 +735,14 @@
                     "endOffset": 5075
                 },
                 "from": {
-                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml"
+                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml",
+                    "position": {
+                        "startLine": 77,
+                        "startColumn": 4,
+                        "startOffset": 4662,
+                        "endColumn": 89,
+                        "endOffset": 4747
+                    }
                 }
             },
             {
@@ -480,7 +754,14 @@
                     "endOffset": 5162
                 },
                 "from": {
-                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml"
+                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml",
+                    "position": {
+                        "startLine": 79,
+                        "startColumn": 4,
+                        "startOffset": 4753,
+                        "endColumn": 87,
+                        "endOffset": 4836
+                    }
                 }
             },
             {
@@ -492,7 +773,14 @@
                     "endOffset": 5263
                 },
                 "from": {
-                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml"
+                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml",
+                    "position": {
+                        "startLine": 81,
+                        "startColumn": 4,
+                        "startOffset": 4842,
+                        "endColumn": 101,
+                        "endOffset": 4939
+                    }
                 }
             },
             {
@@ -504,7 +792,14 @@
                     "endOffset": 5350
                 },
                 "from": {
-                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml"
+                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml",
+                    "position": {
+                        "startLine": 83,
+                        "startColumn": 4,
+                        "startOffset": 4945,
+                        "endColumn": 93,
+                        "endOffset": 5034
+                    }
                 }
             },
             {
@@ -517,7 +812,15 @@
                     "endOffset": 5547
                 },
                 "from": {
-                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml"
+                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml",
+                    "position": {
+                        "startLine": 85,
+                        "startColumn": 4,
+                        "startOffset": 5040,
+                        "endLine": 87,
+                        "endColumn": 12,
+                        "endOffset": 5232
+                    }
                 }
             },
             {
@@ -530,7 +833,15 @@
                     "endOffset": 5819
                 },
                 "from": {
-                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml"
+                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml",
+                    "position": {
+                        "startLine": 89,
+                        "startColumn": 4,
+                        "startOffset": 5238,
+                        "endLine": 94,
+                        "endColumn": 12,
+                        "endOffset": 5505
+                    }
                 }
             },
             {
@@ -543,7 +854,15 @@
                     "endOffset": 6189
                 },
                 "from": {
-                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml"
+                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml",
+                    "position": {
+                        "startLine": 96,
+                        "startColumn": 4,
+                        "startOffset": 5511,
+                        "endLine": 102,
+                        "endColumn": 12,
+                        "endOffset": 5876
+                    }
                 }
             },
             {
@@ -556,7 +875,15 @@
                     "endOffset": 6463
                 },
                 "from": {
-                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml"
+                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml",
+                    "position": {
+                        "startLine": 104,
+                        "startColumn": 4,
+                        "startOffset": 5882,
+                        "endLine": 109,
+                        "endColumn": 12,
+                        "endOffset": 6151
+                    }
                 }
             },
             {
@@ -569,7 +896,15 @@
                     "endOffset": 9036
                 },
                 "from": {
-                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml"
+                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml",
+                    "position": {
+                        "startLine": 111,
+                        "startColumn": 4,
+                        "startOffset": 6157,
+                        "endLine": 147,
+                        "endColumn": 12,
+                        "endOffset": 8725
+                    }
                 }
             },
             {
@@ -582,7 +917,15 @@
                     "endOffset": 11624
                 },
                 "from": {
-                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml"
+                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml",
+                    "position": {
+                        "startLine": 149,
+                        "startColumn": 4,
+                        "startOffset": 8731,
+                        "endLine": 185,
+                        "endColumn": 12,
+                        "endOffset": 11314
+                    }
                 }
             },
             {
@@ -595,7 +938,15 @@
                     "endOffset": 14209
                 },
                 "from": {
-                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml"
+                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml",
+                    "position": {
+                        "startLine": 187,
+                        "startColumn": 4,
+                        "startOffset": 11320,
+                        "endLine": 223,
+                        "endColumn": 12,
+                        "endOffset": 13900
+                    }
                 }
             },
             {
@@ -608,7 +959,15 @@
                     "endOffset": 16809
                 },
                 "from": {
-                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml"
+                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml",
+                    "position": {
+                        "startLine": 225,
+                        "startColumn": 4,
+                        "startOffset": 13906,
+                        "endLine": 261,
+                        "endColumn": 12,
+                        "endOffset": 16501
+                    }
                 }
             },
             {
@@ -620,7 +979,14 @@
                     "endOffset": 16920
                 },
                 "from": {
-                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml"
+                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml",
+                    "position": {
+                        "startLine": 263,
+                        "startColumn": 4,
+                        "startOffset": 16507,
+                        "endColumn": 117,
+                        "endOffset": 16620
+                    }
                 }
             },
             {
@@ -632,7 +998,14 @@
                     "endOffset": 17031
                 },
                 "from": {
-                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml"
+                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml",
+                    "position": {
+                        "startLine": 265,
+                        "startColumn": 4,
+                        "startOffset": 16626,
+                        "endColumn": 117,
+                        "endOffset": 16739
+                    }
                 }
             },
             {
@@ -644,7 +1017,14 @@
                     "endOffset": 17132
                 },
                 "from": {
-                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml"
+                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml",
+                    "position": {
+                        "startLine": 267,
+                        "startColumn": 4,
+                        "startOffset": 16745,
+                        "endColumn": 107,
+                        "endOffset": 16848
+                    }
                 }
             },
             {
@@ -656,7 +1036,14 @@
                     "endOffset": 17253
                 },
                 "from": {
-                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml"
+                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml",
+                    "position": {
+                        "startLine": 269,
+                        "startColumn": 4,
+                        "startOffset": 16854,
+                        "endColumn": 127,
+                        "endOffset": 16977
+                    }
                 }
             },
             {
@@ -668,7 +1055,14 @@
                     "endOffset": 17372
                 },
                 "from": {
-                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml"
+                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml",
+                    "position": {
+                        "startLine": 271,
+                        "startColumn": 4,
+                        "startOffset": 16983,
+                        "endColumn": 125,
+                        "endOffset": 17104
+                    }
                 }
             },
             {
@@ -681,7 +1075,15 @@
                     "endOffset": 17770
                 },
                 "from": {
-                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml"
+                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml",
+                    "position": {
+                        "startLine": 273,
+                        "startColumn": 4,
+                        "startOffset": 17110,
+                        "endLine": 279,
+                        "endColumn": 12,
+                        "endOffset": 17503
+                    }
                 }
             },
             {
@@ -693,7 +1095,14 @@
                     "endOffset": 17887
                 },
                 "from": {
-                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml"
+                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml",
+                    "position": {
+                        "startLine": 281,
+                        "startColumn": 4,
+                        "startOffset": 17509,
+                        "endColumn": 117,
+                        "endOffset": 17622
+                    }
                 }
             },
             {
@@ -705,7 +1114,14 @@
                     "endOffset": 18004
                 },
                 "from": {
-                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml"
+                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml",
+                    "position": {
+                        "startLine": 283,
+                        "startColumn": 4,
+                        "startOffset": 17628,
+                        "endColumn": 117,
+                        "endOffset": 17741
+                    }
                 }
             },
             {
@@ -717,7 +1133,14 @@
                     "endOffset": 18127
                 },
                 "from": {
-                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml"
+                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml",
+                    "position": {
+                        "startLine": 285,
+                        "startColumn": 4,
+                        "startOffset": 17747,
+                        "endColumn": 129,
+                        "endOffset": 17872
+                    }
                 }
             },
             {
@@ -729,7 +1152,14 @@
                     "endOffset": 18258
                 },
                 "from": {
-                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml"
+                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml",
+                    "position": {
+                        "startLine": 287,
+                        "startColumn": 4,
+                        "startOffset": 17878,
+                        "endColumn": 137,
+                        "endOffset": 18011
+                    }
                 }
             },
             {
@@ -741,7 +1171,14 @@
                     "endOffset": 18381
                 },
                 "from": {
-                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml"
+                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml",
+                    "position": {
+                        "startLine": 289,
+                        "startColumn": 4,
+                        "startOffset": 18017,
+                        "endColumn": 129,
+                        "endOffset": 18142
+                    }
                 }
             },
             {
@@ -753,7 +1190,14 @@
                     "endOffset": 18504
                 },
                 "from": {
-                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml"
+                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml",
+                    "position": {
+                        "startLine": 291,
+                        "startColumn": 4,
+                        "startOffset": 18148,
+                        "endColumn": 123,
+                        "endOffset": 18267
+                    }
                 }
             },
             {
@@ -765,7 +1209,14 @@
                     "endOffset": 18611
                 },
                 "from": {
-                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml"
+                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml",
+                    "position": {
+                        "startLine": 293,
+                        "startColumn": 4,
+                        "startOffset": 18273,
+                        "endColumn": 113,
+                        "endOffset": 18382
+                    }
                 }
             },
             {
@@ -778,7 +1229,15 @@
                     "endOffset": 18812
                 },
                 "from": {
-                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml"
+                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml",
+                    "position": {
+                        "startLine": 295,
+                        "startColumn": 4,
+                        "startOffset": 18388,
+                        "endLine": 298,
+                        "endColumn": 12,
+                        "endOffset": 18584
+                    }
                 }
             },
             {
@@ -790,7 +1249,14 @@
                     "endOffset": 18919
                 },
                 "from": {
-                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml"
+                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml",
+                    "position": {
+                        "startLine": 300,
+                        "startColumn": 4,
+                        "startOffset": 18590,
+                        "endColumn": 113,
+                        "endOffset": 18699
+                    }
                 }
             },
             {
@@ -802,7 +1268,14 @@
                     "endOffset": 19030
                 },
                 "from": {
-                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml"
+                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml",
+                    "position": {
+                        "startLine": 302,
+                        "startColumn": 4,
+                        "startOffset": 18705,
+                        "endColumn": 111,
+                        "endOffset": 18812
+                    }
                 }
             },
             {
@@ -814,7 +1287,14 @@
                     "endOffset": 19128
                 },
                 "from": {
-                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml"
+                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml",
+                    "position": {
+                        "startLine": 304,
+                        "startColumn": 4,
+                        "startOffset": 18818,
+                        "endColumn": 98,
+                        "endOffset": 18912
+                    }
                 }
             },
             {
@@ -826,7 +1306,14 @@
                     "endOffset": 19223
                 },
                 "from": {
-                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml"
+                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml",
+                    "position": {
+                        "startLine": 306,
+                        "startColumn": 4,
+                        "startOffset": 18918,
+                        "endColumn": 101,
+                        "endOffset": 19015
+                    }
                 }
             },
             {
@@ -839,7 +1326,15 @@
                     "endOffset": 19418
                 },
                 "from": {
-                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml"
+                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml",
+                    "position": {
+                        "startLine": 308,
+                        "startColumn": 4,
+                        "startOffset": 19021,
+                        "endLine": 311,
+                        "endColumn": 12,
+                        "endOffset": 19211
+                    }
                 }
             },
             {
@@ -851,7 +1346,14 @@
                     "endOffset": 19517
                 },
                 "from": {
-                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml"
+                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml",
+                    "position": {
+                        "startLine": 313,
+                        "startColumn": 4,
+                        "startOffset": 19217,
+                        "endColumn": 105,
+                        "endOffset": 19318
+                    }
                 }
             },
             {
@@ -863,7 +1365,14 @@
                     "endOffset": 19638
                 },
                 "from": {
-                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml"
+                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml",
+                    "position": {
+                        "startLine": 315,
+                        "startColumn": 4,
+                        "startOffset": 19324,
+                        "endColumn": 127,
+                        "endOffset": 19447
+                    }
                 }
             },
             {
@@ -875,7 +1384,14 @@
                     "endOffset": 19729
                 },
                 "from": {
-                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml"
+                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml",
+                    "position": {
+                        "startLine": 317,
+                        "startColumn": 4,
+                        "startOffset": 19453,
+                        "endColumn": 91,
+                        "endOffset": 19540
+                    }
                 }
             },
             {
@@ -888,7 +1404,15 @@
                     "endOffset": 20038
                 },
                 "from": {
-                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml"
+                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml",
+                    "position": {
+                        "startLine": 319,
+                        "startColumn": 4,
+                        "startOffset": 19546,
+                        "endLine": 323,
+                        "endColumn": 12,
+                        "endOffset": 19850
+                    }
                 }
             },
             {
@@ -900,7 +1424,14 @@
                     "endOffset": 20165
                 },
                 "from": {
-                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml"
+                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml",
+                    "position": {
+                        "startLine": 325,
+                        "startColumn": 4,
+                        "startOffset": 19856,
+                        "endColumn": 133,
+                        "endOffset": 19985
+                    }
                 }
             },
             {
@@ -913,7 +1444,15 @@
                     "endOffset": 20361
                 },
                 "from": {
-                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml"
+                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml",
+                    "position": {
+                        "startLine": 327,
+                        "startColumn": 4,
+                        "startOffset": 19991,
+                        "endLine": 330,
+                        "endColumn": 12,
+                        "endOffset": 20182
+                    }
                 }
             },
             {
@@ -926,7 +1465,15 @@
                     "endOffset": 20571
                 },
                 "from": {
-                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml"
+                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml",
+                    "position": {
+                        "startLine": 332,
+                        "startColumn": 4,
+                        "startOffset": 20188,
+                        "endLine": 335,
+                        "endColumn": 12,
+                        "endOffset": 20393
+                    }
                 }
             },
             {
@@ -939,7 +1486,15 @@
                     "endOffset": 20779
                 },
                 "from": {
-                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml"
+                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml",
+                    "position": {
+                        "startLine": 337,
+                        "startColumn": 4,
+                        "startOffset": 20399,
+                        "endLine": 340,
+                        "endColumn": 12,
+                        "endOffset": 20602
+                    }
                 }
             },
             {
@@ -952,7 +1507,15 @@
                     "endOffset": 21001
                 },
                 "from": {
-                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml"
+                    "file": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\values-v21\\values.xml",
+                    "position": {
+                        "startLine": 342,
+                        "startColumn": 4,
+                        "startOffset": 20608,
+                        "endLine": 345,
+                        "endColumn": 12,
+                        "endOffset": 20825
+                    }
                 }
             }
         ]

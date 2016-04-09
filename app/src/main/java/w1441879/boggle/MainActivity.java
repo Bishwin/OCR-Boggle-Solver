@@ -6,10 +6,13 @@ import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.support.v7.app.ActionBarActivity;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+
+import org.opencv.android.OpenCVLoader;
 
 import java.io.File;
 
@@ -19,6 +22,17 @@ public class MainActivity extends Activity {
     private static final int SAVE_REQUEST_CODE = 2;
     private String photoPath;
     private File photoFile;
+
+    private static final String TAG = "MAINACTIVITY";
+
+    static {
+        if(!OpenCVLoader.initDebug()) {
+            Log.d(TAG, "OpenCV not loaded");
+        } else {
+            Log.d(TAG, "OpenCV loaded");
+        }
+    }
+
 
     private Button textSolver, cameraSolver, pictureSolver;
 
