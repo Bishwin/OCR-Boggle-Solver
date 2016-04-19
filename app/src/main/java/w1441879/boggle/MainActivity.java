@@ -2,10 +2,11 @@ package w1441879.boggle;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.graphics.Bitmap;
+import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
 import android.provider.MediaStore;
-import android.support.v7.app.ActionBarActivity;
+import android.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -18,10 +19,15 @@ import java.io.File;
 
 public class MainActivity extends Activity {
 
+    private static final String DATA_PATH = Environment.getExternalStorageDirectory().toString() + "/BoggleSolver";
+    protected String imgPath = DATA_PATH + "/boggleImg.jpg";
+
     private static final int PREVIEW_REQUEST_CODE = 1;
     private static final int SAVE_REQUEST_CODE = 2;
-    private String photoPath;
     private File photoFile;
+    Ocr ocr;
+
+    Toolbar bottomToolbar, topToolbar;
 
     private static final String TAG = "MAINACTIVITY";
 
@@ -33,16 +39,12 @@ public class MainActivity extends Activity {
         }
     }
 
-
-    private Button textSolver, cameraSolver, pictureSolver;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        textSolver = (Button) findViewById(R.id.new_text_game);
-
+        Button textSolver = (Button) findViewById(R.id.new_text_game);
         textSolver.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
@@ -50,20 +52,15 @@ public class MainActivity extends Activity {
             }
         });
 
-        cameraSolver = (Button) findViewById(R.id.new_take_picture);
-
+        Button cameraSolver = (Button) findViewById(R.id.new_take_picture);
         cameraSolver.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                if (intent.resolveActivity(getPackageManager()) != null) {
-                    startActivityForResult(intent, PREVIEW_REQUEST_CODE);
-                }
+                startCameraActivity();
             }
         });
 
-        pictureSolver = (Button) findViewById(R.id.new_select_picture);
-
+        Button pictureSolver = (Button) findViewById(R.id.new_select_picture);
         pictureSolver.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
@@ -80,16 +77,19 @@ public class MainActivity extends Activity {
             }
         });
 
+        Ocr.init(this);
+
+        topToolbar = (Toolbar) findViewById(R.id.toolbar_top);
+        setActionBar(topToolbar);
+
+
+        bottomToolbar = (Toolbar) findViewById(R.id.toolbar_bottom);
+        //bottomToolbar.inflateMenu(R.menu.toolbar_bottom_menu);
+
+
+
     }
 
-    /*@Override
-    protected void onActivityResults(int requestCode, int resultCode, Intent data){
-        if(requestCode == PREVIEW_REQUEST_CODE && resultCode == RESULT_OK){
-            Bundle extras = data.getExtras();
-            Bitmap imageBitmap = (Bitmap) extras.get("data");
-            detailImage.set
-        }
-    }*/
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -112,4 +112,31 @@ public class MainActivity extends Activity {
 
         return super.onOptionsItemSelected(item);
     }
+
+    private void startCameraActivity(){
+        File imgFile = new File(imgPath);
+        Uri UriOutput = Uri.fromFile(imgFile);
+
+        Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+        intent.putExtra(MediaStore.EXTRA_OUTPUT, UriOutput);
+
+        startActivityForResult(intent, 0);
+    }
+
+    protected void onActivityResult(int requestCode, int resultCode, Intent data){
+
+        if(requestCode == -1){
+            ImgProcessing imgProcessing = new ImgProcessing();
+        }
+
+    }
+
+
+
+
+
+
+
 }
+
+

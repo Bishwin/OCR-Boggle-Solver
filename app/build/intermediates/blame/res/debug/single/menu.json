@@ -1,5 +1,9 @@
 [
     {
+        "merged": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\res\\merged\\debug\\menu\\toolbar_bottom_menu.xml",
+        "source": "D:\\dev\\Android\\Boggle\\app\\src\\main\\res\\menu\\toolbar_bottom_menu.xml"
+    },
+    {
         "merged": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_main.xml",
         "source": "D:\\dev\\Android\\Boggle\\app\\src\\main\\res\\menu\\menu_main.xml"
     }

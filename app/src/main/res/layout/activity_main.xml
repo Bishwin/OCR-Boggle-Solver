@@ -3,22 +3,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+    xmlns:layout="http://schemas.android.com/apk/res-auto"
     tools:context="w1441879.boggle.MainActivity">
+
+    <Toolbar
+        android:id="@+id/toolbar_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="?android:attr/colorPrimary"
+        android:elevation="4dp"
+        android:minHeight="?android:attr/actionBarSize" />
 
     <Button
         android:id="@+id/new_text_game"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar_top"
         android:drawableStart="@drawable/ic_create_black_24dp"
         android:text="@string/new_text_game_button"/>
 
     <Button
         android:id="@+id/new_take_picture"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/new_text_game"
         android:drawableLeft="@drawable/ic_camera_alt_black_24dp"
@@ -26,9 +33,49 @@
 
     <Button
         android:id="@+id/new_select_picture"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/new_take_picture"
         android:drawableLeft="@drawable/ic_image_black_24dp"
         android:text="@string/new_select_picture_button"/>
+
+    <Toolbar
+        android:id="@+id/toolbar_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:background="?android:attr/colorPrimary">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_create_black_24dp"
+                android:background="?android:attr/colorPrimary"/>
+
+            <ImageButton
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_camera_alt_black_24dp"
+                android:background="?android:attr/colorPrimary"/>
+
+            <ImageButton
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_add_a_photo_black_24dp"
+                android:background="?android:attr/colorPrimary"/>
+        </LinearLayout>
+
+
+
+
+    </Toolbar>
+
 </RelativeLayout>

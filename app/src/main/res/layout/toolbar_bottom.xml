@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Toolbar
+        android:id="@+id/toolbar_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/colorPrimary"
+        android:minHeight="?android:attr/actionBarSize" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <include layout="@layout/text_button"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"/>
+
+            <include layout="@layout/camera_button"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"/>
+
+            <include layout="@layout/gallery_button"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"/>
+
+
+        </LinearLayout>
+
+    </Toolbar>
+
+</LinearLayout>
