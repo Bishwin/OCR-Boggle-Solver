@@ -8,6 +8,10 @@
         "source": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable-mdpi-v4\\abc_btn_check_to_on_mtrl_000.png"
     },
     {
+        "merged": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_image_white_24dp.png",
+        "source": "D:\\dev\\Android\\Boggle\\app\\src\\main\\res\\drawable-mdpi\\ic_image_white_24dp.png"
+    },
+    {
         "merged": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_list_longpressed_holo.9.png",
         "source": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable-mdpi-v4\\abc_list_longpressed_holo.9.png"
     },
@@ -118,6 +122,10 @@
     {
         "merged": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png",
         "source": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable-mdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_photo_camera_white_24dp.png",
+        "source": "D:\\dev\\Android\\Boggle\\app\\src\\main\\res\\drawable-mdpi\\ic_photo_camera_white_24dp.png"
     },
     {
         "merged": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png",

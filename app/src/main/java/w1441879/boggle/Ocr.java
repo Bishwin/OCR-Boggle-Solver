@@ -38,6 +38,7 @@ public class Ocr {
 
         if (!(new File(DATA_PATH + "tessdata/" + LANG + ".traineddata")).exists()) {
             try{
+                Log.v(TAG, "Copying data");
                 AssetManager assetManager = mContext.getAssets();
                 InputStream input = assetManager.open("tessdata/" + LANG + ".traineddata");
                 OutputStream output = new FileOutputStream(DATA_PATH + "tessdata/" + LANG + ".trainedata");
@@ -52,7 +53,7 @@ public class Ocr {
                 input.close();
                 output.close();
 
-                Log.v(TAG, "Copied data");
+                Log.v(TAG, "data copied");
 
             } catch (IOException e){
                 Log.e(TAG, "cannot copy" + LANG + ".traineddata " + e.toString());

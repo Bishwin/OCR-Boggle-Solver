@@ -6,6 +6,9 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
 import android.provider.MediaStore;
+import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.Snackbar;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
@@ -17,7 +20,7 @@ import org.opencv.android.OpenCVLoader;
 
 import java.io.File;
 
-public class MainActivity extends Activity {
+public class MainActivity extends AppCompatActivity {
 
     private static final String DATA_PATH = Environment.getExternalStorageDirectory().toString() + "/BoggleSolver";
     protected String imgPath = DATA_PATH + "/boggleImg.jpg";
@@ -26,8 +29,6 @@ public class MainActivity extends Activity {
     private static final int SAVE_REQUEST_CODE = 2;
     private File photoFile;
     Ocr ocr;
-
-    Toolbar bottomToolbar, topToolbar;
 
     private static final String TAG = "MAINACTIVITY";
 
@@ -44,26 +45,21 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button textSolver = (Button) findViewById(R.id.new_text_game);
-        textSolver.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                startActivity(new Intent(getApplicationContext(),TextSolverActivity.class));
-            }
-        });
+        android.support.v7.widget.Toolbar toolbar = (android.support.v7.widget.Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
 
-        Button cameraSolver = (Button) findViewById(R.id.new_take_picture);
-        cameraSolver.setOnClickListener(new View.OnClickListener(){
+        FloatingActionButton fab_camera = (FloatingActionButton) findViewById(R.id.fab_camera);
+        fab_camera.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v){
+            public void onClick(View view) {
                 startCameraActivity();
             }
         });
 
-        Button pictureSolver = (Button) findViewById(R.id.new_select_picture);
-        pictureSolver.setOnClickListener(new View.OnClickListener(){
+        FloatingActionButton fab_gallery = (FloatingActionButton) findViewById(R.id.fab_gallery);
+        fab_gallery.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v){
+            public void onClick(View view) {
                 Intent getIntent = new Intent(Intent.ACTION_GET_CONTENT);
                 getIntent.setType("image/*");
 
@@ -76,18 +72,7 @@ public class MainActivity extends Activity {
                 startActivityForResult(chooserIntent, 2);
             }
         });
-
         Ocr.init(this);
-
-        topToolbar = (Toolbar) findViewById(R.id.toolbar_top);
-        setActionBar(topToolbar);
-
-
-        bottomToolbar = (Toolbar) findViewById(R.id.toolbar_bottom);
-        //bottomToolbar.inflateMenu(R.menu.toolbar_bottom_menu);
-
-
-
     }
 
 

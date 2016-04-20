@@ -16,8 +16,6 @@
     <color name="abc_search_url_text_normal">#7fa87f</color>
     <color name="abc_search_url_text_pressed">@android:color/black</color>
     <color name="abc_search_url_text_selected">@android:color/black</color>
-    <color name="accent">#d50000</color>
-    <color name="accent2">#673AB7</color>
     <color name="accent_material_dark">@color/material_deep_teal_200</color>
     <color name="accent_material_light">@color/material_deep_teal_500</color>
     <color name="background_floating_material_dark">@color/material_grey_800</color>
@@ -36,9 +34,9 @@
     <color name="cardview_light_background">#FFFFFFFF</color>
     <color name="cardview_shadow_end_color">#03000000</color>
     <color name="cardview_shadow_start_color">#37000000</color>
-    <color name="colorActiveSmall">#FFFFFF</color>
-    <color name="colorInactive">#747474</color>
-    <color name="colorInactiveSmall">#50FFFFFF</color>
+    <color name="colorAccent">#d50000</color>
+    <color name="colorPrimary">#f44336</color>
+    <color name="colorPrimaryDark">#d32f2f</color>
     <color name="design_fab_shadow_end_color">@android:color/transparent</color>
     <color name="design_fab_shadow_mid_color">#14000000</color>
     <color name="design_fab_shadow_start_color">#44000000</color>
@@ -71,8 +69,6 @@
     <color name="material_grey_800">#ff424242</color>
     <color name="material_grey_850">#ff303030</color>
     <color name="material_grey_900">#ff212121</color>
-    <color name="primary">#f44336</color>
-    <color name="primary_dark">#d32f2f</color>
     <color name="primary_dark_material_dark">@android:color/black</color>
     <color name="primary_dark_material_light">@color/material_grey_600</color>
     <color name="primary_material_dark">@color/material_grey_900</color>
@@ -211,35 +207,6 @@
     <dimen name="abc_text_size_title_material_toolbar">20dp</dimen>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
-    <dimen name="bottom_navigation_elevation">8dp</dimen>
-    <dimen name="bottom_navigation_height">56dp</dimen>
-    <dimen name="bottom_navigation_icon">24dp</dimen>
-    <dimen name="bottom_navigation_margin_bottom">7dp</dimen>
-    <dimen name="bottom_navigation_margin_top_active">6dp</dimen>
-    <dimen name="bottom_navigation_margin_top_inactive">8dp</dimen>
-    <dimen name="bottom_navigation_max_width">168dp</dimen>
-    <dimen name="bottom_navigation_min_width">104dp</dimen>
-    <dimen name="bottom_navigation_notification_height">16dp</dimen>
-    <dimen name="bottom_navigation_notification_margin_left">16dp</dimen>
-    <dimen name="bottom_navigation_notification_margin_left_active">26dp</dimen>
-    <dimen name="bottom_navigation_notification_margin_top">4dp</dimen>
-    <dimen name="bottom_navigation_notification_text_size">10sp</dimen>
-    <dimen name="bottom_navigation_notification_text_size_min">8sp</dimen>
-    <dimen name="bottom_navigation_notification_width">16dp</dimen>
-    <dimen name="bottom_navigation_padding_left">12dp</dimen>
-    <dimen name="bottom_navigation_padding_right">12dp</dimen>
-    <dimen name="bottom_navigation_small_active_max_width">168dp</dimen>
-    <dimen name="bottom_navigation_small_active_min_width">96dp</dimen>
-    <dimen name="bottom_navigation_small_inactive_max_width">96dp</dimen>
-    <dimen name="bottom_navigation_small_inactive_min_width">64dp</dimen>
-    <dimen name="bottom_navigation_small_margin_bottom">16dp</dimen>
-    <dimen name="bottom_navigation_small_margin_top">16dp</dimen>
-    <dimen name="bottom_navigation_small_margin_top_active">6dp</dimen>
-    <dimen name="bottom_navigation_small_selected_width_difference">10dp</dimen>
-    <dimen name="bottom_navigation_text_size_active">14sp</dimen>
-    <dimen name="bottom_navigation_text_size_forced_active">11sp</dimen>
-    <dimen name="bottom_navigation_text_size_forced_inactive">10sp</dimen>
-    <dimen name="bottom_navigation_text_size_inactive">12sp</dimen>
     <dimen name="cardview_compat_inset_shadow">1dp</dimen>
     <dimen name="cardview_default_elevation">2dp</dimen>
     <dimen name="cardview_default_radius">2dp</dimen>
@@ -274,6 +241,7 @@
     <dimen name="design_tab_text_size_2line">12sp</dimen>
     <item format="float" name="disabled_alpha_material_dark" type="dimen">0.30</item>
     <item format="float" name="disabled_alpha_material_light" type="dimen">0.26</item>
+    <dimen name="fab_margin">16dp</dimen>
     <dimen name="game_board_size">75dp</dimen>
     <item format="float" name="highlight_alpha_material_colored" type="dimen">0.26</item>
     <item format="float" name="highlight_alpha_material_dark" type="dimen">0.20</item>
@@ -339,9 +307,18 @@
         <item name="android:windowEnterAnimation">@anim/design_bottom_sheet_slide_in</item>
         <item name="android:windowExitAnimation">@anim/design_bottom_sheet_slide_out</item>
     </style>
-    <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
     </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
     <style name="Base.AlertDialog.AppCompat" parent="android:Widget">
         <item name="android:layout">@layout/abc_alert_dialog_material</item>
         <item name="listLayout">@layout/abc_select_dialog_material</item>

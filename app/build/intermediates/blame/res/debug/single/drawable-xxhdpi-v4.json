@@ -96,6 +96,10 @@
         "source": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable-xxhdpi-v4\\abc_list_focused_holo.9.png"
     },
     {
+        "merged": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_photo_camera_white_24dp.png",
+        "source": "D:\\dev\\Android\\Boggle\\app\\src\\main\\res\\drawable-xxhdpi\\ic_photo_camera_white_24dp.png"
+    },
+    {
         "merged": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png",
         "source": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable-xxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png"
     },
@@ -158,6 +162,10 @@
     {
         "merged": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_list_selector_disabled_holo_light.9.png",
         "source": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable-xxhdpi-v4\\abc_list_selector_disabled_holo_light.9.png"
+    },
+    {
+        "merged": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_image_white_24dp.png",
+        "source": "D:\\dev\\Android\\Boggle\\app\\src\\main\\res\\drawable-xxhdpi\\ic_image_white_24dp.png"
     },
     {
         "merged": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_btn_rating_star_off_mtrl_alpha.png",

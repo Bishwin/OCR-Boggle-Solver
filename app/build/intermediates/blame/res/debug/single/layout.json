@@ -52,10 +52,6 @@
         "source": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_screen_toolbar.xml"
     },
     {
-        "merged": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\gallery_button.xml",
-        "source": "D:\\dev\\Android\\Boggle\\app\\src\\main\\res\\layout\\gallery_button.xml"
-    },
-    {
         "merged": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_button_bar_material.xml",
         "source": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
     },
@@ -180,10 +176,6 @@
         "source": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_activity_chooser_view_list_item.xml"
     },
     {
-        "merged": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\camera_button.xml",
-        "source": "D:\\dev\\Android\\Boggle\\app\\src\\main\\res\\layout\\camera_button.xml"
-    },
-    {
         "merged": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_layout.xml",
         "source": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_action_menu_layout.xml"
     },
@@ -216,15 +208,7 @@
         "source": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\select_dialog_item_material.xml"
     },
     {
-        "merged": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\text_button.xml",
-        "source": "D:\\dev\\Android\\Boggle\\app\\src\\main\\res\\layout\\text_button.xml"
-    },
-    {
         "merged": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_checkbox.xml",
         "source": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_list_menu_item_checkbox.xml"
-    },
-    {
-        "merged": "D:\\dev\\Android\\Boggle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\toolbar_bottom.xml",
-        "source": "D:\\dev\\Android\\Boggle\\app\\src\\main\\res\\layout\\toolbar_bottom.xml"
     }
 ]

@@ -6,19 +6,19 @@
 
     <item
         android:id="@+id/new_text_game"
-        android:showAsAction="always|withText"
+        app:showAsAction="always|withText"
         android:title="@string/new_text_game_button"
         android:icon="@drawable/ic_create_black_24dp"/>
 
     <item
         android:id="@+id/new_take_picture"
-        android:showAsAction="always|withText"
+        app:showAsAction="always|withText"
         android:title="@string/new_take_picture_button"
         android:icon="@drawable/ic_camera_alt_black_24dp"/>
 
     <item
         android:id="@+id/new_select_picture"
-        android:showAsAction="always|withText"
+        app:showAsAction="always|withText"
         android:title="@string/new_select_picture_button"
         android:icon="@drawable/ic_image_black_24dp"/>
 

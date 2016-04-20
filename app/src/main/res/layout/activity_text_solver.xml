@@ -7,8 +7,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="w1441879.boggle.TextSolverActivity">
-
+    tools:context="w1441879.boggle.TextSolverActivity"
+    tools:showIn="@layout/activity_main">
 
     <TextView
         android:layout_width="wrap_content"
@@ -36,7 +36,7 @@
         android:digits="abcdefghijklmnopqrstuvwxyz"
         android:singleLine="true"
         android:maxLength="16"
-        android:foregroundTint="@color/accent"/>
+        android:foregroundTint="@color/colorAccent"/>
 
     <Button
         android:id="@+id/submit_board"
