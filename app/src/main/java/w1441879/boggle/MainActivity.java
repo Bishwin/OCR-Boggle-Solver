@@ -9,16 +9,19 @@ import android.provider.MediaStore;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.ArrayAdapter;
 import android.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.support.v4.app.FragmentActivity;
 
 import org.opencv.android.OpenCVLoader;
 
 import java.io.File;
+import java.util.Set;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -48,30 +51,12 @@ public class MainActivity extends AppCompatActivity {
         android.support.v7.widget.Toolbar toolbar = (android.support.v7.widget.Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab_camera = (FloatingActionButton) findViewById(R.id.fab_camera);
-        fab_camera.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startCameraActivity();
-            }
-        });
+        initFAB();
 
-        FloatingActionButton fab_gallery = (FloatingActionButton) findViewById(R.id.fab_gallery);
-        fab_gallery.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent getIntent = new Intent(Intent.ACTION_GET_CONTENT);
-                getIntent.setType("image/*");
+        TextSolverFragment textSolver = new TextSolverFragment();
+        getSupportFragmentManager().beginTransaction().add(R.id.fragment_container, textSolver).commit();
 
-                Intent pickIntent = new Intent(Intent.ACTION_PICK, android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-                pickIntent.setType("image/*");
 
-                Intent chooserIntent = Intent.createChooser(getIntent, "Select Image");
-                chooserIntent.putExtra(Intent.EXTRA_INITIAL_INTENTS, new Intent[] {pickIntent});
-
-                startActivityForResult(chooserIntent, 2);
-            }
-        });
         Ocr.init(this);
     }
 
@@ -116,12 +101,32 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    private void initFAB(){
+        FloatingActionButton fab_camera = (FloatingActionButton) findViewById(R.id.fab_camera);
+        fab_camera.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startCameraActivity();
+            }
+        });
 
+        FloatingActionButton fab_gallery = (FloatingActionButton) findViewById(R.id.fab_gallery);
+        fab_gallery.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent getIntent = new Intent(Intent.ACTION_GET_CONTENT);
+                getIntent.setType("image/*");
 
+                Intent pickIntent = new Intent(Intent.ACTION_PICK, android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+                pickIntent.setType("image/*");
 
+                Intent chooserIntent = Intent.createChooser(getIntent, "Select Image");
+                chooserIntent.putExtra(Intent.EXTRA_INITIAL_INTENTS, new Intent[] {pickIntent});
 
-
-
+                startActivityForResult(chooserIntent, 2);
+            }
+        });
+    }
 }
 
 

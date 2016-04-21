@@ -2451,7 +2451,7 @@ containing a value of this type.
         public static final int center_vertical=0x7f0c0023;
         public static final int checkbox=0x7f0c0055;
         public static final int chronometer=0x7f0c0097;
-        public static final int clear_board=0x7f0c0073;
+        public static final int clear_board=0x7f0c0074;
         public static final int clip_horizontal=0x7f0c002f;
         public static final int clip_vertical=0x7f0c0030;
         public static final int collapseActionView=0x7f0c0037;
@@ -2466,7 +2466,7 @@ containing a value of this type.
         public static final int design_menu_item_text=0x7f0c008d;
         public static final int design_navigation_view=0x7f0c008c;
         public static final int disableHome=0x7f0c000e;
-        public static final int dummy=0x7f0c006e;
+        public static final int dummy=0x7f0c006f;
         public static final int editText1=0x7f0c0077;
         public static final int editText10=0x7f0c0080;
         public static final int editText11=0x7f0c0081;
@@ -2491,15 +2491,15 @@ containing a value of this type.
         public static final int exitUntilCollapsed=0x7f0c0017;
         public static final int expand_activities_button=0x7f0c0041;
         public static final int expanded_menu=0x7f0c0054;
-        public static final int fab_camera=0x7f0c006d;
-        public static final int fab_gallery=0x7f0c006f;
+        public static final int fab_camera=0x7f0c006e;
+        public static final int fab_gallery=0x7f0c0070;
         public static final int fill=0x7f0c0031;
         public static final int fill_horizontal=0x7f0c0032;
         public static final int fill_vertical=0x7f0c0025;
         public static final int fixed=0x7f0c003b;
-        public static final int fragment_container=0x7f0c0075;
+        public static final int fragment_container=0x7f0c006d;
         public static final int front=0x7f0c001d;
-        public static final int game_board=0x7f0c0071;
+        public static final int game_board=0x7f0c0072;
         public static final int game_grid=0x7f0c0076;
         public static final int home=0x7f0c0004;
         public static final int homeAsUp=0x7f0c000f;
@@ -2530,7 +2530,7 @@ containing a value of this type.
         public static final int progress_circular=0x7f0c0006;
         public static final int progress_horizontal=0x7f0c0007;
         public static final int radio=0x7f0c0057;
-        public static final int result_view=0x7f0c0074;
+        public static final int result_view=0x7f0c0075;
         public static final int right=0x7f0c0027;
         public static final int screen=0x7f0c002b;
         public static final int scroll=0x7f0c0018;
@@ -2564,12 +2564,12 @@ containing a value of this type.
         public static final int start=0x7f0c0028;
         public static final int status_bar_latest_event_content=0x7f0c0092;
         public static final int submit_area=0x7f0c0068;
-        public static final int submit_board=0x7f0c0072;
+        public static final int submit_board=0x7f0c0073;
         public static final int tabMode=0x7f0c000d;
         public static final int text=0x7f0c009a;
         public static final int text2=0x7f0c0098;
         public static final int textSpacerNoButtons=0x7f0c0050;
-        public static final int textView=0x7f0c0070;
+        public static final int textView=0x7f0c0071;
         public static final int time=0x7f0c0096;
         public static final int title=0x7f0c0046;
         public static final int title_template=0x7f0c004b;
@@ -2641,11 +2641,10 @@ containing a value of this type.
         public static final int notification_template_media=0x7f04002d;
         public static final int notification_template_part_chronometer=0x7f04002e;
         public static final int notification_template_part_time=0x7f04002f;
-        public static final int results_fragment=0x7f040030;
-        public static final int select_dialog_item_material=0x7f040031;
-        public static final int select_dialog_multichoice_material=0x7f040032;
-        public static final int select_dialog_singlechoice_material=0x7f040033;
-        public static final int support_simple_spinner_dropdown_item=0x7f040034;
+        public static final int select_dialog_item_material=0x7f040030;
+        public static final int select_dialog_multichoice_material=0x7f040031;
+        public static final int select_dialog_singlechoice_material=0x7f040032;
+        public static final int support_simple_spinner_dropdown_item=0x7f040033;
     }
     public static final class menu {
         public static final int menu_main=0x7f0d0000;
@@ -2683,6 +2682,11 @@ containing a value of this type.
         public static final int new_take_picture_button=0x7f06001a;
         public static final int new_text_game_button=0x7f06001b;
         public static final int status_bar_notification_info_overflow=0x7f060013;
+        public static final int text_input_clear=0x7f06001c;
+        public static final int text_input_default=0x7f06001d;
+        public static final int text_input_hint=0x7f06001e;
+        public static final int text_input_submit=0x7f06001f;
+        public static final int text_title=0x7f060020;
     }
     public static final class style {
         public static final int AlertDialog_AppCompat=0x7f090089;

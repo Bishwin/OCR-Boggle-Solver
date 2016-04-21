@@ -47,6 +47,7 @@ MERGED from [com.android.support:support-v4:23.2.1] D:\dev\Android\Boggle\app\bu
 MERGED from [com.android.support:support-vector-drawable:23.2.1] D:\dev\Android\Boggle\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.2.1\AndroidManifest.xml:7:5-20
 MERGED from [com.android.support:support-v4:23.2.1] D:\dev\Android\Boggle\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:23.2.1] D:\dev\Android\Boggle\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.2.1] D:\dev\Android\Boggle\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\AndroidManifest.xml:22:5-20
 	android:label
 		ADDED from D:\dev\Android\Boggle\app\src\main\AndroidManifest.xml:12:9-41
 	android:supportsRtl
@@ -79,6 +80,7 @@ ADDED from D:\dev\Android\Boggle\app\src\main\AndroidManifest.xml:26:9-65
 		ADDED from D:\dev\Android\Boggle\app\src\main\AndroidManifest.xml:26:19-53
 uses-sdk
 INJECTED from D:\dev\Android\Boggle\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [Boggle:openCVLibrary310:unspecified] D:\dev\Android\Boggle\app\build\intermediates\exploded-aar\Boggle\openCVLibrary310\unspecified\AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:appcompat-v7:23.2.1] D:\dev\Android\Boggle\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.2.1\AndroidManifest.xml:21:5-23:78
 MERGED from [com.android.support:support-v4:23.2.1] D:\dev\Android\Boggle\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:animated-vector-drawable:23.2.1] D:\dev\Android\Boggle\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.2.1\AndroidManifest.xml:5:5-44
@@ -98,7 +100,7 @@ MERGED from [com.android.support:support-vector-drawable:23.2.1] D:\dev\Android\
 MERGED from [com.android.support:support-v4:23.2.1] D:\dev\Android\Boggle\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:recyclerview-v7:23.2.1] D:\dev\Android\Boggle\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.2.1\AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:support-v4:23.2.1] D:\dev\Android\Boggle\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\AndroidManifest.xml:20:5-43
-MERGED from [Boggle:openCVLibrary310:unspecified] D:\dev\Android\Boggle\app\build\intermediates\exploded-aar\Boggle\openCVLibrary310\unspecified\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:support-v4:23.2.1] D:\dev\Android\Boggle\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\AndroidManifest.xml:20:5-43
 	tools:overrideLibrary
 		ADDED from [com.android.support:appcompat-v7:23.2.1] D:\dev\Android\Boggle\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.2.1\AndroidManifest.xml:23:9-75
 	android:targetSdkVersion

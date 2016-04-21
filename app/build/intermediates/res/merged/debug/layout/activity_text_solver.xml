@@ -15,7 +15,7 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:layout_centerHorizontal="true"
-        android:text="ENTER GAME BOARD"
+        android:text="@string/text_title"
         android:paddingBottom="5dp"
         android:focusable="true"
         android:focusableInTouchMode="true"
@@ -27,8 +27,8 @@
         android:layout_height="wrap_content"
         android:padding="15dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="abcdefghijklmnop"
-        android:hint="enter letters"
+        android:text="@string/text_input_default"
+        android:hint="@string/text_input_hint"
         android:layout_below="@+id/textView"
         android:layout_alignStart="@+id/submit_board"
         android:layout_marginTop="20dp"
@@ -42,7 +42,7 @@
         android:id="@+id/submit_board"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="SUBMIT"
+        android:text="@string/text_input_submit"
         android:layout_alignBaseline="@+id/clear_board"
         android:layout_alignBottom="@+id/clear_board"
         android:layout_alignStart="@+id/textView" />
@@ -51,7 +51,7 @@
         android:id="@+id/clear_board"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="CLEAR"
+        android:text="@string/text_input_clear"
         android:layout_marginTop="25dp"
         android:layout_marginBottom="15dp"
         android:layout_below="@+id/game_board"
@@ -62,7 +62,6 @@
         android:layout_below="@+id/clear_board"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
     </ListView>
 
     <FrameLayout
@@ -70,7 +69,4 @@
         android:layout_below="@+id/clear_board"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
-
-
-
 </RelativeLayout>
