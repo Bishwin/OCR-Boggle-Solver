@@ -7,7 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="w1441879.boggle.TextSolverActivity"
+    tools:context="w1441879.boggle.TextSolverFragment"
     tools:showIn="@layout/activity_main">
 
     <TextView
@@ -25,17 +25,17 @@
         android:id="@+id/game_board"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
         android:padding="15dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/text_input_default"
         android:hint="@string/text_input_hint"
         android:layout_below="@+id/textView"
-        android:layout_alignStart="@+id/submit_board"
         android:layout_marginTop="20dp"
         android:inputType="textNoSuggestions"
         android:digits="abcdefghijklmnopqrstuvwxyz"
-        android:singleLine="true"
         android:maxLength="16"
+        android:singleLine="true"
         android:foregroundTint="@color/colorAccent"/>
 
     <Button

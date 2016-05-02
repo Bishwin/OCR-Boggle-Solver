@@ -5,36 +5,46 @@ import java.util.Iterator;
 import java.util.Set;
 import w1441879.boggle.dictionary.Trie;
 
-/**
- * TODO: boggle solver algorithm
- */
 public class Solver {
-
     Trie dictionary;
     String[][] board;
     boolean[][] tracker;
     final static int GRID_SIZE = 4;
     Set<String> results = new HashSet<>();
 
+    /**
+     * Constructer, creates new dictionary and gameboard
+     */
     public Solver(){
         dictionary = new Trie();
         board = new String[GRID_SIZE][GRID_SIZE];
     }
 
+
+    /**
+     * Constructer, uses already created dictionary
+     * creates gameboard
+     */
     public Solver(Trie dictionary){
         this.dictionary = dictionary;
         board = new String[GRID_SIZE][GRID_SIZE];
     }
 
-    public void addBoard(String str){
+
+    /**
+     * Fills String[][] gameboard with the given string
+     * If the letter 'Q' is used its changed to 'QU', per Boggle rules
+     * @param gameboard, 16 letter string for Boggle game
+     */
+    public void addBoard(String gameboard){
         int counter = 0;
-        if(str.length() == GRID_SIZE*GRID_SIZE){
+        if(gameboard.length() == GRID_SIZE*GRID_SIZE){
 
             for(int col = 0; col < GRID_SIZE; col++){
 
                 for(int row = 0; row < GRID_SIZE; row++){
 
-                    char letter = str.charAt(counter);
+                    char letter = gameboard.charAt(counter);
                     if(letter == 'q'){
                         board[col][row] = "qu";
                         counter++;
@@ -48,7 +58,9 @@ public class Solver {
         printBoard();
     }
 
-
+    /**
+     * Prints Boggle board, testing method.
+     */
     public void printBoard(){
 
         for(int col = 0; col < GRID_SIZE; col++){
@@ -60,10 +72,11 @@ public class Solver {
         }
     }
 
+    /**
+     * loops through board,calls solving algorithm,
+     */
     public Set<String> solvePuzzle(){
         for(int col = 0; col < GRID_SIZE; col++){
-            //int col = 0;
-            //int row = 0;
             for(int row = 0; row < GRID_SIZE; row++){
 
                 String currentWord = board[col][row];
@@ -76,6 +89,9 @@ public class Solver {
 
     }
 
+    /**
+     * Prints results to command line, testing method
+     */
     private void printResults(){
         Iterator<String> it = results.iterator();
         while(it.hasNext()){
@@ -83,19 +99,33 @@ public class Solver {
         }
     }
 
-    private boolean[][] deepCopy(boolean[][] A){
-        boolean[][] B = new boolean[GRID_SIZE][GRID_SIZE];
+    /**
+     * Creates deep copy of tracking array
+     * for solving algorithm
+     * @param oldTracker 2d array to be copied
+     * @return copied array
+     */
+    private boolean[][] deepCopy(boolean[][] oldTracker){
+        boolean[][] newTracker = new boolean[GRID_SIZE][GRID_SIZE];
         for(int x = 0; x < GRID_SIZE; x++){
             for(int y = 0; y < GRID_SIZE; y++){
-                if(A[x][y]){
-                    B[x][y] = A[x][y];
+                if(oldTracker[x][y]){
+                    newTracker[x][y] = oldTracker[x][y];
                 }
             }
         }
-        return B;
+        return newTracker;
     }
 
-
+    /**
+     * solving algorithm, recursively cycles
+     * through finding combinations
+     * checking against the dictionary
+     * @param tracker tracks used tiles for current word
+     * @param word current word combination
+     * @param col current coordinate
+     * @param row current coordinate
+     */
     private void solvePuzzle( boolean[][] tracker,String word, int col, int row){
 
         if(dictionary.isWord(word)){

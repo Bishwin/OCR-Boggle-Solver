@@ -58,6 +58,8 @@ MERGED from [com.android.support:support-vector-drawable:23.2.1] D:\dev\Android\
 MERGED from [com.android.support:support-v4:23.2.1] D:\dev\Android\Boggle\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:23.2.1] D:\dev\Android\Boggle\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:23.2.1] D:\dev\Android\Boggle\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\AndroidManifest.xml:22:5-20
+	android:screenOrientation
+		ADDED from D:\dev\Android\Boggle\app\src\main\AndroidManifest.xml:16:9-45
 	android:label
 		ADDED from D:\dev\Android\Boggle\app\src\main\AndroidManifest.xml:14:9-41
 	android:supportsRtl
@@ -67,27 +69,23 @@ MERGED from [com.android.support:support-v4:23.2.1] D:\dev\Android\Boggle\app\bu
 	android:icon
 		ADDED from D:\dev\Android\Boggle\app\src\main\AndroidManifest.xml:13:9-43
 	android:theme
-		ADDED from D:\dev\Android\Boggle\app\src\main\AndroidManifest.xml:16:9-52
+		ADDED from D:\dev\Android\Boggle\app\src\main\AndroidManifest.xml:17:9-52
 activity#w1441879.boggle.MainActivity
-ADDED from D:\dev\Android\Boggle\app\src\main\AndroidManifest.xml:19:9-27:20
+ADDED from D:\dev\Android\Boggle\app\src\main\AndroidManifest.xml:20:9-28:20
 	android:label
-		ADDED from D:\dev\Android\Boggle\app\src\main\AndroidManifest.xml:21:13-45
+		ADDED from D:\dev\Android\Boggle\app\src\main\AndroidManifest.xml:22:13-45
 	android:name
-		ADDED from D:\dev\Android\Boggle\app\src\main\AndroidManifest.xml:20:13-41
+		ADDED from D:\dev\Android\Boggle\app\src\main\AndroidManifest.xml:21:13-41
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from D:\dev\Android\Boggle\app\src\main\AndroidManifest.xml:22:13-26:29
+ADDED from D:\dev\Android\Boggle\app\src\main\AndroidManifest.xml:23:13-27:29
 action#android.intent.action.MAIN
-ADDED from D:\dev\Android\Boggle\app\src\main\AndroidManifest.xml:23:17-69
+ADDED from D:\dev\Android\Boggle\app\src\main\AndroidManifest.xml:24:17-69
 	android:name
-		ADDED from D:\dev\Android\Boggle\app\src\main\AndroidManifest.xml:23:25-66
+		ADDED from D:\dev\Android\Boggle\app\src\main\AndroidManifest.xml:24:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\dev\Android\Boggle\app\src\main\AndroidManifest.xml:25:17-77
+ADDED from D:\dev\Android\Boggle\app\src\main\AndroidManifest.xml:26:17-77
 	android:name
-		ADDED from D:\dev\Android\Boggle\app\src\main\AndroidManifest.xml:25:27-74
-activity#w1441879.boggle.TextSolverActivity
-ADDED from D:\dev\Android\Boggle\app\src\main\AndroidManifest.xml:28:9-65
-	android:name
-		ADDED from D:\dev\Android\Boggle\app\src\main\AndroidManifest.xml:28:19-53
+		ADDED from D:\dev\Android\Boggle\app\src\main\AndroidManifest.xml:26:27-74
 uses-sdk
 INJECTED from D:\dev\Android\Boggle\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [Boggle:openCVLibrary310:unspecified] D:\dev\Android\Boggle\app\build\intermediates\exploded-aar\Boggle\openCVLibrary310\unspecified\AndroidManifest.xml:7:5-9:41

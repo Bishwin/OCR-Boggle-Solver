@@ -1,13 +1,6 @@
 package w1441879.boggle.dictionary;
 
-/**
- * TODO: add method isWord() - checks words
- * TODO: add method isPrefix() - checks start of word
- * TODO: add method getWords() - get all words for testing
- */
-
 public class TrieNode {
-
     char c;
     boolean isWord;
     TrieNode[] children;
@@ -24,7 +17,6 @@ public class TrieNode {
 
     /**
      * Constructor for children nodes
-     *
      * @param c , a character of a word
      */
     public TrieNode(char c) {
@@ -36,7 +28,6 @@ public class TrieNode {
 
     /**
      * Adds a word to the trie recursively
-     *
      * @param word , the word to be added
      */
     public void addWord(String word) {
@@ -56,9 +47,14 @@ public class TrieNode {
         children[index].addWord(word.substring(1));
     }
 
-    public TrieNode lookUp(String word){
+    /**
+     * Checks a node branch until for the desired word
+     * returns null if the word doesn't exist
+     * or a node for the words last letter
+     * @param word , the word to be checked
+     */
+    public TrieNode checkNode(String word){
         TrieNode node = this;
-        if(word != null){
         for (int i = 0; i < word.length(); i++) {
             int index = word.charAt(i) - 'a';
             TrieNode child = node.children[index];
@@ -68,18 +64,29 @@ public class TrieNode {
             }
             node = child;
         }
-        }
         return node;
     }
 
+    /**
+     * Calls checkNode to check the given
+     * string is a valid word
+     * @param word , the word to be checked
+     * @return boolean
+     */
     public boolean isWord(String word){
-        TrieNode node = lookUp(word);
+        TrieNode node = checkNode(word);
         return node !=null && node.isWord;
 
     }
 
-    public boolean isPrefix(String word){
-        TrieNode node = lookUp(word);
+    /**
+     * Calls checkNode to check the given
+     * string is a valid prefix
+     * @param prefix , the prefix to be checked
+     * @return boolean
+     */
+    public boolean isPrefix(String prefix){
+        TrieNode node = checkNode(prefix);
         return node !=null && node.childNum > 0;
     }
 }

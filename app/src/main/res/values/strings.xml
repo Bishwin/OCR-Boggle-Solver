@@ -6,9 +6,9 @@
     <string name="new_select_picture_button">SELECT PICTURE</string>
 
     <!-- Text Solver Fragment-->
-    <string name="text_title">ENTER GAME BOARD</string>
-    <string name="text_input_hint">Enter Letters</string>
-    <string name="text_input_default">abcdefghijklmnop</string>
+    <string name="text_title">ENTER GAME BOARD BELOW</string>
+    <string name="text_input_hint">ENTER GAME HERE</string>
+    <string name="text_input_default">typewordgamehere</string>
     <string name="text_input_submit">SUBMIT</string>
     <string name="text_input_clear">CLEAR</string>
 

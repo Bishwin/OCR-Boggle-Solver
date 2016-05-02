@@ -1,27 +1,13 @@
 package w1441879.boggle.dictionary;
 
-
 import android.content.Context;
 import android.content.res.AssetManager;
-
 import java.io.BufferedReader;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 
-/**
- * TODO: read in dictionary file
- * TODO: add method isWord() - checks words
- * TODO: add method isPrefix() - checks start of word
- * TODO: add method getWords() - get all words for testing
- * TODO: BUFFERED READER
- */
-
 public class Trie {
-
     private TrieNode root;
     private Context mContext;
 
@@ -33,6 +19,10 @@ public class Trie {
         readDictionary();
     }
 
+    /**
+     * Constructor for trie
+     * @param context, requires context to access assets
+     */
     public Trie(Context context){
         mContext = context;
         root = new TrieNode();
@@ -82,21 +72,38 @@ public class Trie {
         root.addWord(word.toLowerCase());
     }
 
+
+    /**
+     * Testing method before Solver existed
+     * @param word , the word to be checked exists
+     */
     public void checkWord(String word){
         isPrefix(word.toLowerCase());
-
         isWord(word.toLowerCase());
 
     }
 
+
+    /**
+     * Calls respective method in the rootnode
+     * checks if a word exists
+     * @param word , the word to be checked
+     * @return boolean
+     */
     public boolean isWord(String word){
         return root.isWord(word);
     }
 
-    public boolean isPrefix(String word){
-        boolean result = root.isPrefix(word);
+    /**
+     * Calls respective method in the rootnode
+     * checks if a String combination is a prefix to a word
+     * @param prefix , the prefix to be checked
+     * @return boolean
+     */
+    public boolean isPrefix(String prefix){
+        boolean result = root.isPrefix(prefix);
         if(result){
-            System.out.println(word + " is prefix");
+            System.out.println(prefix + " is prefix");
         }
         return result;
     }

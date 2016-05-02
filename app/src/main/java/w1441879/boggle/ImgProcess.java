@@ -1,96 +1,105 @@
 package w1441879.boggle;
 
-
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Random;
 
-import android.content.Context;
-import android.content.ContextWrapper;
+
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.graphics.Matrix;
 import android.media.ExifInterface;
-
 import android.os.Environment;
+import android.provider.ContactsContract;
 import android.util.Log;
 
-import com.googlecode.leptonica.android.AdaptiveMap;
-import com.googlecode.leptonica.android.Pix;
-import com.googlecode.leptonica.android.ReadFile;
-import com.googlecode.leptonica.android.Rotate;
-import com.googlecode.leptonica.android.Skew;
-import com.googlecode.tesseract.android.TessBaseAPI;
-import com.googlecode.leptonica.android.Binarize;
-
+import org.opencv.android.Utils;
+import org.opencv.core.Core;
+import org.opencv.core.CvType;
+import org.opencv.core.Mat;
+import org.opencv.core.MatOfPoint;
+import org.opencv.core.Point;
+import org.opencv.core.Rect;
+import org.opencv.core.Scalar;
+import org.opencv.core.Size;
+import org.opencv.imgproc.Imgproc;
 
 public class ImgProcess{
 
     private static final String TAG = "ImgProcess.java";
-    static final String DATA_PATH = Environment.getExternalStorageDirectory().toString() + "/BoggleSolver/";
-    static final String LANG = "die";
-    boolean photoTaken;
-    String imgPath;
 
-    ImgProcess(String imgPath){
-        this.imgPath = imgPath;
-    }
+    public static Bitmap processImage(String imgPath){
 
-    public void onPhotoTaken(){
-        photoTaken = true;
+        Mat greyMat = new Mat();
+        Mat mean = new Mat();
 
+        //Rotates image
         BitmapFactory.Options options = new BitmapFactory.Options();
         options.inSampleSize = 4;
-
         Bitmap bitmap = BitmapFactory.decodeFile(imgPath, options);
+        bitmap = rotatePhoto(bitmap, imgPath);
 
-        //bitmap = rotatePhoto(bitmap);
+        //GREYSCALE image and save
+        Bitmap greyScaledBMP = greyscaleImg(bitmap);
+        //SaveImage(greyScaledBMP, "GREYSCALE");
 
-        //bitmap = greyscaleImg(bitmap);
+        //CONVERT bitmap to MAT
+        Utils.bitmapToMat(greyScaledBMP, greyMat);
+        //OPENCV GREYSCALE, To convert it to work with openCV methods
+        Imgproc.cvtColor(greyMat,greyMat,Imgproc.COLOR_BGR2GRAY);
 
-        recogniseText(bitmap);
+        //new bitmap to store greyscale opencv
+        Bitmap TMPBMP = Bitmap.createBitmap(greyMat.width(), greyMat.height(),Bitmap.Config.ARGB_8888);
 
+        //threshold image
+        Imgproc.threshold(greyMat, mean, 0, 255, Imgproc.THRESH_BINARY +Imgproc.THRESH_OTSU);
 
+        //save to phone
+        Utils.matToBitmap(mean, TMPBMP);
+        SaveImage(TMPBMP, "threshold-OTSU");
 
-        // Convert to ARGB_8888, required by tess
-        //bitmap = bitmap.copy(Bitmap.Config.ARGB_8888, true);
+        //erode lines
+        Imgproc.erode(mean, mean, Imgproc.getStructuringElement(Imgproc.CV_SHAPE_RECT, new Size(5,5)));
+        //save to phone
+        Utils.matToBitmap(mean, TMPBMP);
+        SaveImage(TMPBMP, "CVerode-7-7");
 
+        //get contours and cropped img
+        Mat cropped  = Contours(mean);
+        Imgproc.dilate(cropped, cropped, Imgproc.getStructuringElement(Imgproc.CV_SHAPE_CROSS, new Size(5,5)));
+        Imgproc.erode(cropped, cropped, Imgproc.getStructuringElement(Imgproc.CV_SHAPE_RECT, new Size(3,3)));
 
+        Bitmap cropBMP = Bitmap.createBitmap(cropped.width(), cropped.height(),Bitmap.Config.ARGB_8888);
+        Utils.matToBitmap(cropped, cropBMP);
 
-
+        //save and analyse
+        SaveImage(cropBMP, "Finished Image");
+        return cropBMP;
     }
 
-    private void recogniseText(Bitmap bitmap){
-
-        TessBaseAPI baseAPI = new TessBaseAPI();
-        baseAPI.setDebug(true);
-        Log.e(TAG, "BEFORE BASE API INIT");
-        baseAPI.init(DATA_PATH, LANG);
-
-        baseAPI.setImage(bitmap);
-
-        String recognisedText = baseAPI.getUTF8Text();
-
-        baseAPI.end();
-
-        Log.v(TAG, "OCRED TEXT: " + recognisedText);
-
-    }
-
+    /**
+     * rotates image
+     * @param bitmap bitmap to be rotated
+     * @param imgPath location of file
+     */
     public static Bitmap rotatePhoto(Bitmap bitmap, String imgPath){
 
         try {
             ExifInterface exif = new ExifInterface(imgPath);
-            int exifOrientation = exif.getAttributeInt(
-                    ExifInterface.TAG_ORIENTATION,
-                    ExifInterface.ORIENTATION_NORMAL);
-
-            Log.v(TAG, "Orient: " + exifOrientation);
+            int rotation = exif.getAttributeInt(ExifInterface.TAG_ORIENTATION,ExifInterface.ORIENTATION_NORMAL);
+            Log.v(TAG, "Orient: " + rotation);
 
             int rotate = 0;
 
-            switch (exifOrientation) {
+            switch (rotation) {
                 case ExifInterface.ORIENTATION_ROTATE_90:
                     rotate = 90;
                     break;
@@ -106,7 +115,7 @@ public class ImgProcess{
 
             if (rotate != 0) {
 
-                // Getting width & height of the given image.
+                // Getting width & height of the image.
                 int w = bitmap.getWidth();
                 int h = bitmap.getHeight();
 
@@ -118,9 +127,6 @@ public class ImgProcess{
                 bitmap = Bitmap.createBitmap(bitmap, 0, 0, w, h, mtx, false);
             }
 
-            // Convert to ARGB_8888, required by tess
-            //bitmap = bitmap.copy(Bitmap.Config.ARGB_8888, true);
-
         } catch (IOException e) {
             Log.e(TAG, "Couldn't correct orientation: " + e.toString());
         }
@@ -128,11 +134,18 @@ public class ImgProcess{
         return bitmap;
     }
 
+    /**
+     * greyscales image
+     * @param original image to greyscale
+     */
     public static Bitmap greyscaleImg(Bitmap original){
 
-        int alpha, red, green, blue;
-        int newPixel;
+        int alpha, red, green, blue, newPixel;
 
+        /*
+        * Convert to ARGB_8888 to get colour data,
+        * format is required by tesstwo
+        */
         Bitmap greyscaledBMP = original.copy(Bitmap.Config.ARGB_8888,true);
 
         for(int i = 0; i < original.getWidth(); i++){
@@ -152,150 +165,83 @@ public class ImgProcess{
 
             }
         }
-        //saveToInternalStorage(greyscaledBMP);
         return greyscaledBMP;
     }
 
+    /**
+     * saves images to phone for debugging
+     * @param finalBitmap bitmap to be saved
+     * @param filename name of image
+     */
+    static void SaveImage(Bitmap finalBitmap, String filename) {
 
-    public void onPhotoTaken1(){
-        photoTaken = true;
+        String root = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES).toString();
+        File myDir = new File(root + "/saved_images");
+        myDir.mkdirs();
+        //Random generator = new Random();
+        //int n = 10000;
+        //n = generator.nextInt(n);
 
-        BitmapFactory.Options options = new BitmapFactory.Options();
-        options.inSampleSize = 4;
+        DateFormat df = new SimpleDateFormat("dd_MM_HH_mm_");
+        Date dateobj = new Date();
 
-        Bitmap bitmap = BitmapFactory.decodeFile(imgPath, options);
-
+        String fname = df.format(dateobj)+ filename + ".jpg";
+        System.out.println(fname);
+        File file = new File (myDir, fname);
+        if (file.exists ()) file.delete ();
         try {
-            ExifInterface exif = new ExifInterface(imgPath);
-            int exifOrientation = exif.getAttributeInt(
-                    ExifInterface.TAG_ORIENTATION,
-                    ExifInterface.ORIENTATION_NORMAL);
+            FileOutputStream out = new FileOutputStream(file);
+            finalBitmap.compress(Bitmap.CompressFormat.JPEG, 90, out);
+            out.flush();
+            out.close();
 
-            Log.v(TAG, "Orient: " + exifOrientation);
-
-            int rotate = 0;
-
-            switch (exifOrientation) {
-                case ExifInterface.ORIENTATION_ROTATE_90:
-                    rotate = 90;
-                    break;
-                case ExifInterface.ORIENTATION_ROTATE_180:
-                    rotate = 180;
-                    break;
-                case ExifInterface.ORIENTATION_ROTATE_270:
-                    rotate = 270;
-                    break;
-            }
-
-            Log.v(TAG, "Rotation: " + rotate);
-
-            if (rotate != 0) {
-
-                // Getting width & height of the given image.
-                int w = bitmap.getWidth();
-                int h = bitmap.getHeight();
-
-                // Setting pre rotate
-                Matrix mtx = new Matrix();
-                mtx.preRotate(rotate);
-
-                // Rotating Bitmap
-                bitmap = Bitmap.createBitmap(bitmap, 0, 0, w, h, mtx, false);
-            }
-
-            // Convert to ARGB_8888, required by tess
-            bitmap = bitmap.copy(Bitmap.Config.ARGB_8888, true);
-
-        } catch (IOException e) {
-            Log.e(TAG, "Couldn't correct orientation: " + e.toString());
-        }
-
-        // _image.setImageBitmap( bitmap );
-
-        Log.v(TAG, "Before baseApi");
-
-        //Pix pix;
-
-        //pix = ReadFile.readBitmap(bitmap);
-        //float degrees = Skew.findSkew(pix);
-        //Log.e(TAG,"degrees = " + degrees);
-        //pix = Rotate.rotate(pix, degrees);
-        //pix = Scale.scale(pix, 10f);
-
-        //pix = AdaptiveMap.backgroundNormMorph(pix);
-
-        //pix = Edge.pixSobelEdgeFilter(pix, Edge.L_HORIZONTAL_EDGES);
-        //pix = GrayQuant.pixThresholdToBinary(pix, 100);
-
-
-
-        //pix = Binarize.otsuAdaptiveThreshold(pix);
-        //pix = Binarize.sauvolaBinarizeTiled(pix);
-        //Pix pix2 = AdaptiveMap.backgroundNormMorph(pix);
-
-        //pix = Enhance.unsharpMasking(pix);
-
-
-        TessBaseAPI baseApi = new TessBaseAPI();
-        baseApi.setDebug(true);
-        Log.e(TAG,"BEFORE BASEAPI.INIT");
-        baseApi.init(DATA_PATH, LANG);
-
-
-        baseApi.setImage(bitmap);
-        //baseApi.setImage(pix);
-
-        String recognizedText = baseApi.getUTF8Text();
-        int[] con = baseApi.wordConfidences();
-
-
-        baseApi.end();
-
-        // You now have the text in recognizedText var, you can do anything with it.
-        // We will display a stripped out trimmed alpha-numeric version of it (if lang is eng)
-        // so that garbage doesn't make it to the display.
-
-        Log.v(TAG, "OCRED TEXT: " + recognizedText);
-
-
-        for(int word : con){
-            Log.v(TAG, "confidence : " + word);
-        }
-
-
-        if ( MainActivity.LANG.equalsIgnoreCase("eng") ) {
-            recognizedText = recognizedText.replaceAll("[^a-zA-Z0-9]+", " ");
-        }
-
-        recognizedText = recognizedText.trim();
-
-
-        // Cycle done.
-    }
-
-
-
-    /*private String saveToInternalStorage(Bitmap bitmapImage){
-        ContextWrapper cw = new ContextWrapper(mContext.getApplicationContext());
-        // path to /data/data/yourapp/app_data/imageDir
-        File directory = cw.getDir("imageDir", Context.MODE_PRIVATE);
-        // Create imageDir
-        File mypath=new File(directory,"profile.jpg");
-
-        FileOutputStream fos = null;
-        try {
-            fos = new FileOutputStream(mypath);
-            // Use the compress method on the BitMap object to write image to the OutputStream
-            bitmapImage.compress(Bitmap.CompressFormat.PNG, 100, fos);
-            fos.close();
-        } catch (IOException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
-        return directory.getAbsolutePath();
-    }*/
+    }
 
+    /**
+     * detects image and crops based on largest contour
+     * @param originalMat , image to be edge detected
+     */
+    static Mat Contours(Mat originalMat){
+        Mat cannyEdges = new Mat();
+        Mat hierarchy = new Mat();
+        Bitmap TMPBMP = Bitmap.createBitmap(originalMat.width(), originalMat.height(),Bitmap.Config.ARGB_8888);
 
+        double highest = 0;
+        int index =0;
+        //list to store all the contours
+        List<MatOfPoint> contourList = new ArrayList<MatOfPoint>();
 
+        //Converting Mat back to Bitmap for testing
+        Imgproc.Canny(originalMat, cannyEdges,10, 50);
+        Utils.matToBitmap(cannyEdges, TMPBMP);
+        SaveImage(TMPBMP, "CANNYEDGES-10-50");
 
+        //finding contours
+        Imgproc.findContours(cannyEdges,contourList,hierarchy,Imgproc.RETR_TREE, Imgproc.CHAIN_APPROX_SIMPLE);
 
+        //Drawing contours on a new image
+        Mat contours = new Mat();
+        contours.create(cannyEdges.rows(),cannyEdges.cols(),CvType.CV_8UC3);
+
+        for(int i = 0; i < contourList.size(); i++){
+
+            double area = contourList.get(i).size().area();
+            if(area > highest){
+               highest = area;
+               index = i;
+            }
+        }
+
+        Rect boundingbox = Imgproc.boundingRect(contourList.get(index));
+        Mat crop = new Mat(originalMat, boundingbox);
+
+        Bitmap cropbmp = Bitmap.createBitmap(crop.width(), crop.height(),Bitmap.Config.ARGB_8888);
+        Utils.matToBitmap(crop, cropbmp);
+        SaveImage(cropbmp, "CROP");
+        return crop;
+
+    }
 }
